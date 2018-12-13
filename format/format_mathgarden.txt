@@ -1,0 +1,12 @@
+user_id (int)
+item_id (int)
+correct_answered (1/0)
+response_in_milliseconds (int)
+created (int) // first transaction has it  = 0, the others have them = time offset in seconds
+new_user_domain_modified_count (int) // number of attempts a user has done for this domain before this transaction
+difficulty (0/1/2) // influences the expected probability of errors the system tries balancing when selecting the next item (from 10% to 40%)
+user_domain_rating (double) // user’s Elo
+item_rating (double) // item’s Elo
+answer (string) // answer text (can be also “timed-out” and “don’t know”)
+grade (1-7) // grade a student is in
+question (string) // question text
